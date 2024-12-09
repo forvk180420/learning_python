@@ -55,4 +55,4 @@ print(c1.get_time())  # 00:20:00
 
 c2 = Clock(2000)
 c3 = c1 + c2
-print(c2.get_time())  # 00:33:20
+print(c3.get_time())  # 00:53:20
