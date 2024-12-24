@@ -69,7 +69,7 @@ class Rect2(Geom):
         print('Инициализатор Rect2')
         self.fill = fill
 
-    def draw(self):  # Рсширение (extended), если атрибута нет в базовом классе
+    def draw(self):  # Расширение (extended), если атрибута нет в базовом классе
         print('Рисование прямоугольника2')
 
 
