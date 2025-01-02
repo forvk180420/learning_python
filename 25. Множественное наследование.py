@@ -44,11 +44,12 @@ n = NoteBook('Acer', 1, 30000)
 # init Goods
 
 """
-Если в базовом классе Goods нет super().__init__(), т.е. ссылки на базовый класс Mixing не будет, а значит __init__ для 
-Mixing не будет вызван, т.к. уже он был найден и вызван в Goods. Но, почему идет ссылка на Mixing, а не на самый базовый
-класс object? Дело в том, что при в NoteBook(Goods, MixinLog) наследование будет идти сначала от Goods, затем от 
-MixinLog и т.д.
+Если при создании экземпляра класса NoteBook в базовом классе Goods есть __init__ и нет super().__init__(), то в других
+наследуемых классах MixinLog и MixinLog2 не будет вызван метод __init__.
+Если в классе есть super().__init__(), то будет осуществлен поиск __init__ не в самом базовом классе object. Дело в том,
+что при в NoteBook(Goods, MixinLog) наследование будет идти сначала от Goods, затем от MixinLog и т.д.
 """
+print('*'*30)
 print(NoteBook.__mro__)  # (<class '__main__.NoteBook'>, <class '__main__.Goods'>, <class '__main__.MixinLog'>,
 # <class 'object'>) - это порядок наследования MRO
 
