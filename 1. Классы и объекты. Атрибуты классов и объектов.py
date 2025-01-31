@@ -23,6 +23,8 @@ Point.type_pt = 'disc'
 print(a.type_pt)  # disc
 # Аналог
 setattr(Point, 'prop', 1)
+setattr(Point, 'type_pt', 'square')  # изменение значения атрибута в классе
+print(a.type_pt)  # square
 print(a.prop)  # 1
 
 "Значения свойств класс можно добавлять в переменную"
