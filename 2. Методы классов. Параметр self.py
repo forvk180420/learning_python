@@ -19,7 +19,7 @@ class Point:
     circle = 2
 
     def set_exmp(sefl):  # self - ссылка на экземпляр класса
-        print('вызов метода set_coords')
+        print('вызов метода set_exmp')
         print(str(sefl))
 
     def set_coords(sefl, x, y):  # self - ссылка на экземпляр класса
@@ -28,7 +28,7 @@ class Point:
 
 
 pt = Point()
-pt.set_exmp()  # вызов метода set_coords \n<__main__.Point object at 0x000001DAE4A30EB0>
+pt.set_exmp()  # вызов метода set_exmp \n<__main__.Point object at 0x000001DAE4A30EB0>
 pt.set_coords(x=1, y=2)
 print(pt.__dict__)  # {'x': 1, 'y': 2}
 

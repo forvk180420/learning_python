@@ -15,7 +15,7 @@ class Point:
         self.y = 0
 
     def set_exmp(sefl):  # self - ссылка на экземпляр класса
-        print('вызов метода set_coords')
+        print('вызов метода set_exmp')
         print(str(sefl))
 
     def set_coords(sefl, x, y):  # self - ссылка на экземпляр класса
